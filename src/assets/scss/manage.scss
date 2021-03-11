@@ -1,0 +1,163 @@
+$col-primary:#2AAF37;
+$col-warning:#f56c6c;
+$table-border:#DCDCDC;
+$table-bg:#F5F5F5;
+$col-border:#c2e7b0;
+$col-bg:#f0f9eb;
+$color:#8c939d;
+.home-task{
+  /*角色管理*/
+  .view{
+    .viewContent{
+      margin-top: 0;
+      .viewAD{
+        width: 53%;
+      }
+      .viewRole{
+        .el-select{
+          width: 35%;
+        }
+        .leastUse{
+          margin-right: 24px;
+          color: $color;
+        }
+        .el-tag{
+          margin-right: 24px;
+          text-align: center;
+        }
+      }
+      .viewSwitch{
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .viewData{
+        .finance,.service,.custom{
+          margin-bottom: 20px;
+          .market{
+            min-width: 120px;
+          }
+          .marketButton{
+            min-width: 100px;
+          }
+          .el-row{
+            margin-bottom: 10px;
+            .el-button:focus{
+                color: #606266;
+                border-color: #dcdfe6;
+                background-color: #fff;
+            }
+          }
+        }
+        //.custom{
+        //  .el-input{
+        //    width: 94%;
+        //  }
+        //}
+        .viewDataFinance,.viewDataService,.viewDataCustom{
+          border: 1px solid $table-border;
+          background-color: $table-bg;
+          padding: 10px;
+        }
+        .viewDataFinanceOn,.viewDataServiceOn,.viewDataCustomOn{
+          border: 1px solid $col-border;
+          background-color: $col-bg;
+          padding: 10px;
+        }
+      }
+      .roleData{
+        .el-form-item{width: 60%}
+        .roleDisabled{width: 33%;display: inline-block}
+      }
+      .userDisabled{
+         width: 45%;
+         display: inline-block;
+      }
+    }
+    .buttomButton{
+      background: transparent;
+      text-align: right;
+      padding: 20px;
+    }
+  }
+  .viewHeader{
+    .el-row{
+      margin-bottom: 6px;
+      vertical-align: middle;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .el-col{
+        text-align: left;
+        font-size: 13px;
+        vertical-align: middle;
+      }
+      .viewInp{
+        margin-right: 24px;
+      }
+    }
+  }
+  .viewContent{
+    padding: 20px;
+    background-color: #fff;
+    width: 100%;
+    margin-top: 24px;
+    font-size: 12px;
+    .viewIcon{
+      margin-bottom: 10px;
+      text-align: right;
+      color:#409eff;
+    }
+    .viewButton{
+      margin-bottom: 10px;
+      text-align: right;
+    }
+    .viewTable{
+      .el-button.delete{
+        color: $col-warning;
+      }
+    }
+    .viewPage{
+      margin-top: 24px;
+      text-align: right;
+      .gross{
+        display: inline-block;
+        vertical-align:middle;
+        .el-input{
+          width: 30%;
+        }
+      }
+    }
+    .el-form{
+      .el-textarea__inner{
+        resize: none;
+        width: 100%;
+        height: 300px;
+      }
+      .el-tree{
+        padding: 20px;
+        border: 1px solid #dcdfe6;
+        border-radius: 4px;
+      }
+      .el-form-item__label{
+        padding:0 24px 0 0;
+      }
+      //.el-form-item__content{
+      //  .el-input{
+      //    width:70%;
+      //  }
+      //}
+    }
+  }
+  .cell{
+    font-size: 11px;
+    .open{
+      color: $col-primary;
+    }
+    .disabled{
+      color: $col-warning;
+    }
+  }
+  .el-pagination{
+    display: inline-block;
+  }
+}

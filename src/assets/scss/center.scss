@@ -1,0 +1,48 @@
+.home-task{
+  /*数据中心*/
+  .viewHeader{
+    .el-row{
+      margin-bottom: 6px;
+      vertical-align: middle;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .el-col{
+        text-align: left;
+        font-size: 13px;
+        vertical-align: middle;
+        .el-button {
+          margin-top: 3px;
+        }
+      }
+    }
+  }
+  .viewContent{
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 24px;
+    font-size: 12px;
+    .viewIcon{
+      margin-bottom: 10px;
+      text-align: right;
+      color:#409eff;
+    }
+    .viewTable{
+      width: 100%;
+    }
+    .viewPage{
+      margin-top: 24px;
+      text-align: right;
+      .viewPageSize{
+        width: 85px;
+      }
+      .gross{
+        display: inline-block;
+        vertical-align:middle;
+        .el-input{
+          width: 30%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,201 @@
+@import "generic.reset";
+$bg:#e7e8ef;
+$col-primary:#2AAF37;
+$tab-padding: 30px;
+$tab-padding--left: 30px;
+$tab-margin--right: 20px;
+$note: red;
+$delete: #f56c6c;
+$el-menu-hover:rgba(0,0,0,0.30);
+$pop-meun-hover:#56CD74;
+$el-menu--collapseWidth:90px;
+
+.app-wrapper{
+  height: 100%;
+}
+.redNote{
+  color: $note;
+}
+.delete{
+  color: $delete;
+}
+.delete:hover{
+  color: $delete;
+}
+.left-bgNav {
+    background: -webkit-linear-gradient(#56CD74,#5970BD);
+    background: -o-linear-gradient(#56CD74,#5970BD);
+    background: -moz-linear-gradient(#56CD74,#5970BD);
+    background: linear-gradient(#56CD74,#5970BD);
+}
+.left-nav{
+  transition: width .1s;
+  width:180px;
+  // height: 100%;
+  // position: absolute;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  // top: 60px;
+  height: calc(100% - 60px);
+  z-index:1001;
+  box-shadow: 0 0 8px 0 rgba(86,205,116,0.80);
+  .el-menu--collapse{
+    width: $el-menu--collapseWidth !important;
+    .el-submenu {
+       margin-bottom: 20px;
+       text-align: center;
+       .el-submenu__title [class^=el-icon-]{
+         width:auto
+       }
+    }
+  }
+  .el-menu--scroll {
+    .el-menu-wrap {
+      min-width:179px;
+      display: block;
+      color: #ecf5ff;
+      line-height: 16px;
+      padding: 18px 45px;
+    }
+    .el-menu-item-group{
+      .el-menu-item-group__title{
+        padding: 0!important;
+      }
+      .router-link-active{
+            background: $el-menu-hover;
+            color: #FFFFFF !important;
+       }
+      .el-menu-item{
+        font-size:12px;
+        &:hover {
+          background-color: $el-menu-hover !important;
+        }
+        &:focus {
+          background-color: $el-menu-hover !important;
+        }
+      }
+   }
+  }
+
+  .el-submenu{
+    .el-menu-item:focus, .el-menu-item:hover{
+      background: transparent!important;
+    }
+    .el-submenu__title{
+      padding: 4px !important;
+      &:hover{
+         background-color: $el-menu-hover!important;
+      }
+      i{
+        margin-right: 15px;
+        color:#FFFFFF;
+      }
+      .collapse-title--block{
+        font-size: 12px;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        // transition: all .5s;
+      }
+      .collapse-title--inline{
+        font-size: 14px;
+        margin-left: 15px;
+        display:inline-block;
+        // transition: all .5s;
+      }
+      .el-submenu__icon-arrow{
+        margin-top: 0px
+      }
+    }
+  }
+}
+.el-menu--vertical{
+  .el-menu-item-group__title{
+    padding: 0!important;
+  }
+  .el-menu--popup {
+    background: rgba(255,255,255,0.95) !important;
+    box-shadow:4px 0px 8px 0px rgba(228,228,228,1);
+      .el-menu-item-group{
+        padding: 0px 10px;
+        .el-menu-item{
+          height: 30px;
+          line-height: 30px;
+          font-size:12px;
+          color: #666666 !important;
+          &:hover {
+            background-color: $pop-meun-hover !important;
+            color:#FFFFFF !important;
+            border-radius: 2px;
+          }
+          &:focus {
+            background-color: $pop-meun-hover !important;
+            color:#FFFFFF !important;
+          }
+        }
+        .router-link-active{
+            background: $pop-meun-hover;
+            color: #FFFFFF !important;
+            border-radius: 2px;
+        }
+        .el-menu-wrap {
+          min-width:179px;
+          display: block;
+        }
+    }
+  }
+
+}
+.home-task{
+  min-height: 100%;
+  .container-home {
+    width: 100%;
+    padding-left: 20px
+  }
+  .viewHeader {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+  }
+}
+
+/*fade-transform*/
+.fade-transform-leave-active,
+.fade-transform-enter-active {
+  transition: all .5s;
+}
+.fade-transform-enter {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+.fade-transform-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}
+
+/*breadcrumb transition*/
+.breadcrumb-enter-active,
+.breadcrumb-leave-active {
+  transition: all .5s;
+}
+
+.breadcrumb-enter,
+.breadcrumb-leave-active {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.breadcrumb-move {
+  transition: all .5s;
+}
+
+.breadcrumb-leave-active {
+  position: absolute;
+}
+
+
+
+
+
+

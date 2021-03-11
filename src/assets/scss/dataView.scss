@@ -1,0 +1,92 @@
+.fullSelect {
+    width:100%
+}
+.dayMargin{
+    min-width: 50px;
+    .el-date-editor--daterange.el-input__inner{
+        width: 100%;
+    }
+}
+.block{
+    .el-date-editor .el-input__icon,.el-range-separator{
+        line-height: 22px;
+    }
+}
+.uploadB2C{
+    .el-form-item__label{
+        width:80px;
+    }
+    .el-form-item__error{
+        left:80px;
+    }
+}
+.el-dialog.upload-dialog{
+    min-width: 750px;
+    .el-form-item__label{
+        text-align: left;
+    }
+}
+.full-pic-div{
+    display: block;
+    height: 95%;
+    width: 90%;
+    margin: 2% auto;
+    position: fixed;
+    z-index: 20004;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    .full-pic{
+        display: block;
+        z-index: 20005;
+        position: relative;
+        top: 10px;
+        height: 90%;
+        margin: 2% auto;
+    }
+}
+.viewIconView{
+    margin-bottom: 15px;
+    font-size:16px;
+}
+.link{
+    color:-webkit-link;
+}
+.link-disable{
+    color:#bdbdbd;
+    cursor:not-allowed
+}
+.block {
+    .el-date-editor {
+        width:95%
+    }
+}
+.dialogContent{
+    .tamllAlipayContent {
+        overflow: hidden;
+        padding: 0 30px;
+        .el-row{
+            margin: 10px 5px;
+            .titleName {
+                width: 100px;
+                text-align: left;
+                font-size: 16px;
+                display: inline-block
+            }
+            .titleValue{
+                display: inline-block;
+                padding: 0 5px;
+                overflow: hidden;
+                word-break: break-all;
+            } 
+        }
+        label{
+            display: block;
+            margin: 10px 0 5px;
+        }
+    }
+    .dialog-footer{
+        text-align:right
+    }
+}

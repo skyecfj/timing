@@ -1,0 +1,908 @@
+.home-task {
+  .viewHeader {
+    .el-row {
+      margin-bottom: 6px;
+      vertical-align: middle;
+      &:last-child {
+        margin-bottom: 0
+      }
+      .el-col {
+        text-align: left;
+        font-size: 13px;
+        vertical-align: middle;
+      }
+    }
+  }
+  .viewContent {
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 24px;
+    font-size: 12px;
+    .viewButton {
+      margin-bottom: 10px;
+      text-align: right;
+    }
+    .viewPage {
+      margin-top: 24px;
+      text-align: right;
+      .gross {
+        display: inline-block;
+        vertical-align: middle;
+        .el-input {
+          width: 30%
+        }
+      }
+    }
+  }
+  .viewForm {
+    .viewFormHeader {
+      background-color: #fff;
+      padding: 20px;
+      width: 100%;
+      display: inline-block;
+      .viewFormLeft {
+        width: 30%;
+        display: inline-block;
+        margin-right: 50px;
+      }
+      .viewFormRight {
+        width: 60%;
+        display: inline-block
+      }
+      .viewFormHall {
+        .selectHall {
+          padding: 20px 25px;
+          border: 1px solid #c2e7b0;
+          background-color: #f0f9eb;
+          .isSelected {
+            margin-bottom: 15px
+          }
+        }
+      }
+      .cardRemark {
+        width: 30%
+      }
+      .viewFormBank, .viewFormRate, .viewFormDataDic {
+        width: 30%;
+        display: inline-block;
+        margin-right: 50px;
+      }
+      .viewFormBank {
+        width: 27%;
+        .el-select {
+          width: 100%
+        }
+      }
+      .viewFormData {
+        width: 40%;
+        display: inline-block;
+        margin-right: 50px;
+      }
+      .viewFormDataAccount {
+        width: 32%;
+        display: inline-block;
+        margin-right: 10px;
+      }
+      .viewFormDataButton {
+        width: 10%;
+        display: inline-block;
+        margin-right: 50px;
+      }
+    }
+    .viewFormContent {
+      background-color: #fff;
+      padding: 20px;
+      margin-top: 24px;
+      .el-form-item {
+        width: 30%;
+        display: inline-block;
+        margin-right: 50px;
+      }
+      .hall-form-item {
+        width: 27%
+      }
+    }
+    .buttomButton {
+      background: transparent;
+      text-align: right;
+      padding: 20px;
+    }
+    .accountSubContent {
+      background-color: #fff;
+      padding: 20px;
+      margin-top: 24px;
+      .el-form-item {
+        width: 40%;
+        display: inline-block;
+        margin-right: 50px;
+      }
+    }
+    .viewFormHoliday {
+      padding: 20px;
+      background-color: #fff;
+      .el-form-item {
+        width: 30%
+      }
+    }
+    .viewFormCustomer {
+      padding: 20px;
+      background-color: #fff;
+      margin-bottom: 24px;
+      .el-form-item {
+        width: 25%;
+        display: inline-block;
+        margin-right: 50px;
+      }
+      .longerItem {
+        width: 56%
+      }
+    }
+    .BOHContent {
+      .BOHContentRules {
+        width: 100%;
+        .el-form-item {
+          display: inline-block;
+          width: auto
+        }
+        .el-row {
+          margin-bottom: 20px;
+          .sign, .andOr {
+            width: 60px
+          }
+          .money {
+            width: 140px
+          }
+        }
+      }
+    }
+    .BOHButton {
+      text-align: right;
+      .el-form-item {
+        margin-bottom: 0
+      }
+    }
+    .viewFormHall {
+      .el-card {
+        background-color: #fff;
+        margin-bottom: 24px;
+        .hallContentTitle {
+          padding: 10px 0;
+          font-size: 13px;
+          .temSusAdd {
+            color: #56CD74;
+            margin-left: 20px
+          }
+          .temSusHistory {
+            margin-left: 750px
+          }
+        }
+        .hallContent {
+          .hallContentHr {
+            border: none;
+            height: 1px;
+            background: #ebeef5;
+          }
+          .el-form-item {
+            width: 27%;
+            display: inline-block;
+            margin-right: 50px;
+            .bankJDE {
+              margin-bottom: 10px
+            }
+          }
+          .stopDate {
+            width: 41%
+          }
+          .hallInfo {
+            width: 185px
+          }
+          .address {
+            width: 100%
+          }
+        }
+        .hallContentBank {
+          .clearButton {
+            position: absolute;
+            right: 0
+          }
+          .bankCheck {
+            width: 30%;
+            display: inline-block
+          }
+          .bankRadio {
+            padding: 10px;
+            width: 120px;
+            vertical-align: top
+          }
+          .bankInfo {
+            width: 20%;
+            display: inline-block;
+            margin-right: 35px;
+          }
+          .saveRate {
+            margin-top: -19px;
+            .fixedDate {
+              display: inline-block;
+              vertical-align: top
+            }
+            .contentCalendar {
+              width: 440px;
+              display: inline-block;
+              vertical-align: top;
+              margin-left: 20px;
+            }
+          }
+          .saveBox {
+            padding: 10px;
+            border: 1px solid #DCDCDC;
+            background-color: #F5F5F5;
+            display: inline-block;
+            .interval {
+              width: 260px;
+              display: inline-block
+            }
+            .contentTitle {
+              width: 80px;
+              display: inline-block
+            }
+          }
+          .saveBoxOn {
+            border: 1px solid #c2e7b0;
+            background-color: #f0f9eb
+          }
+          .escort {
+            margin-left: 108px
+          }
+          .landlord {
+            margin-left: 216px
+          }
+        }
+      }
+    }
+    .setBizDate {
+      .el-dialog {
+        width: 882px;
+        .dataConPos {
+          width: 70px
+        }
+        .datePos {
+          width: 150px;
+          vertical-align: middle;
+          .el-input-group__prepend {
+            padding: 0 10px
+          }
+          .el-input-group__append {
+            padding: 0 10px
+          }
+        }
+        .bigDataPos {
+          width: 200px
+        }
+      }
+    }
+    .viewFormThirdBill {
+      padding: 50px;
+      background-color: #fff;
+      .basicInfo, .map {
+        margin-top: 20px;
+        .basicInfoInp {
+          width: 250px
+        }
+        .collapse {
+          position: absolute;
+          right: 90px;
+          .add {
+            color: #56CD74;
+            margin-right: 0
+          }
+        }
+        .content {
+          padding: 20px;
+          position: relative;
+          left: 0;
+          top: 0;
+          .contentButton {
+            button.left, button.right {
+              display: inline-block;
+              width: 200px;
+              background: #E3E3E3;
+              text-align: center;
+              color: #fff;
+              border: none;
+            }
+            .left {
+              border-radius: 20px 0 0 20px
+            }
+            .right {
+              border-radius: 0 20px 20px 0;
+              margin-left: 0
+            }
+            button.active {
+              background: #56CD74
+            }
+          }
+          .upload {
+            padding: 50px;
+            width: 700px;
+            height: 300px;
+            border: 1px solid #E3E3E3;
+            text-align: center;
+            svg {
+              color: #49A9EE;
+              cursor: pointer
+            }
+          }
+          .rangeInp {
+            width: 20%
+          }
+          .rangeItem {
+            display: inline-block;
+            width: 200px
+          }
+          .data {
+            display: inline-block;
+            width: 45%
+          }
+          .filterCondition {
+            p {
+              margin-bottom: 10px;
+              .name {
+                display: inline-block;
+                width: 110px;
+                text-align: right;
+                margin-right: 10px;
+              }
+            }
+          }
+          .standard {
+            margin-bottom: 9px;
+            .el-form-item__label {
+              width: 120px;
+              text-align: right;
+              margin-right: 10px
+            }
+            .el-form-item__content {
+              display: inline-block
+            }
+          }
+        }
+      }
+    }
+    .activeHeader {
+      background: #fff;
+      padding: 20px;
+      text-align: right;
+    }
+    .activeContent {
+      background-color: #fff;
+      padding: 20px;
+      margin-top: 24px;
+      .el-input__suffix-inner i {
+        line-height: 30px;
+        font-style: normal
+      }
+      .activeRange {
+        padding: 10px 10px 20px 10px;
+        border: 1px solid #c2e7b0;
+        background-color: #f0f9eb;
+        display: inline-block;
+        .refund {
+          width: 200px
+        }
+      ;
+        .amount {
+          width: 100px
+        }
+      ;
+        .link {
+          font-size: 12px;
+          color: #3F74BA
+        }
+      }
+      .billTitle {
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        i {
+          width: 4px;
+          height: 16px;
+          background: #56CD74;
+          display: inline-block;
+        }
+        span {
+          font-size: 11px;
+          margin-left: 8px;
+          color: #56CD74;
+        }
+      }
+      .billBigTitle {
+        font-size: 20px;
+        color: #949494
+      }
+      .billLittleTitle {
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        i {
+          display: inline-block;
+          width: 8px;
+          height: 8px;
+          border-radius: 100%;
+          background: black;
+        }
+        span {
+          font-size: 12px;
+          margin-left: 8px
+        }
+      }
+      //input{width: 200px}
+      /*基础信息*/
+      .basicCarousel {
+        margin-top: 13px;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        .basicCarouselBar {
+          position: relative;
+          left: 0;
+          transition: left .5s linear;
+          .el-card {
+            border-radius: 5px;
+            width: 800px;
+            height: 540px;
+            margin-right: 20px;
+            display: inline-block;
+            .delContract {
+              border: none;
+              float: right;
+              color: red;
+              padding: 0;
+              font-size: 16px;
+            }
+          }
+          .checkInfoCard {
+            height: auto;
+            .checkInfoCardItem {
+              display: inline-block
+            }
+          }
+          .addCompacts {
+            width: 200px;
+            text-align: center;
+            cursor: pointer;
+            .el-card__body {
+              padding: 0;
+              height: 100%;
+              .el-button {
+                width: 100%;
+                height: 100%;
+                border: none;
+                i {
+                  font-size: 40px
+                }
+                span {
+                  font-size: 14px
+                }
+              }
+            }
+          }
+        }
+      }
+      .basicScrollBar {
+        .basicScroll {
+          display: inline-block;
+          width: 80px;
+          height: 6px;
+          background: #c0c4cc;
+          margin-right: 10px;
+          cursor: pointer;
+        }
+        .active {
+          background: #52c16e
+        }
+      }
+      .basicInfo {
+        .basicWidth {
+          width: 250px;
+          display: inline-block;
+          margin-right: 100px;
+        }
+        .basicSmallWidth {
+          width: 180px;
+          margin-right: 50px
+        }
+        .basicAddButton {
+          width: 250px;
+          display: inline-block;
+          margin-right: 10px;
+        }
+        .basicWidthTextarea {
+          width: 605px
+        }
+        .basicWidthTypeThree {
+          .block {
+            display: inline-block
+          }
+        }
+        .basicRangeType {
+          .basicActiveRange {
+            border: 1px solid #c2e7b0;
+            background-color: #f0f9eb;
+            display: inline-block;
+            padding: 10px;
+            .basicActiveRangeHeader {
+              padding: 10px;
+              border-bottom: 1px solid #E4E4E4
+            }
+            .basicActiveRangeContent {
+              height: 400px;
+              .el-scrollbar__wrap {
+                overflow: hidden;
+                width: 470px;
+                .el-menu {
+                  background: transparent;
+                  border-right: none;
+                  .el-submenu {
+                    .el-menu-item {
+                      height: auto;
+                      white-space: normal;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .accountWays {
+          .el-checkbox.is-bordered.is-checked {
+            border-color: #56CD74
+          }
+          .el-radio.is-bordered.is-checked {
+            border-color: #56CD74
+          }
+          .el-checkbox:last-child {
+            margin-bottom: 0
+          }
+          .el-radio:last-child {
+            margin-bottom: 0
+          }
+          .el-checkbox, .el-radio {
+            background: #fff;
+            display: block;
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 10px;
+            border-radius: 0;
+            text-align: center;
+            position: relative;
+            padding: 0 20px;
+            .el-checkbox__input:not(.is-disabled):not(.is-disabled).is-checked .el-checkbox__inner {
+              background: transparent;
+              border-top: 20px solid #56CD74
+            }
+            .el-checkbox__input.is-disabled .el-checkbox__inner {
+              background-color: transparent
+            }
+            .el-checkbox__input.is-disabled.is-checked .el-checkbox__inner {
+              border-top: 20px solid #f2f6fc
+            }
+            .el-radio__input:not(.is-disabled):not(.is-disabled).is-checked .el-radio__inner {
+              background: transparent;
+              border-top: 20px solid #56CD74
+            }
+            .el-radio__input.is-disabled .el-radio__inner {
+              background-color: transparent
+            }
+            .el-radio__input.is-disabled.is-checked .el-radio__inner {
+              border-top: 20px solid #f2f6fc
+            }
+            .el-checkbox__input, .el-radio__input {
+              position: absolute;
+              top: 0;
+              right: 0;
+              width: 20px;
+              height: 20px;
+              .el-checkbox__inner, .el-radio__inner {
+                border-radius: 0;
+                border: none;
+                border-top: 20px solid transparent;
+                border-left: 20px solid transparent;
+              }
+              .el-checkbox__inner:after {
+                left: -8px;
+                top: -20px
+              }
+              .el-radio__inner:after {
+                box-sizing: content-box;
+                width: 3px;
+                height: 7px;
+                border: 1px solid #fff;
+                position: absolute;
+                left: -8px;
+                top: -20px;
+                border-radius: 0;
+                border-left: 0;
+                border-top: 0;
+                background: transparent;
+                transform: rotate(45deg);
+                content: '';
+              }
+            }
+            .el-checkbox__label {
+              margin-top: 9px;
+              padding-left: 0
+            }
+            .el-radio__label {
+              display: inline-block;
+              margin-top: 12px;
+              padding-left: 0
+            }
+          }
+        }
+      }
+      /*收/付款信息*/
+      .billInfo {
+        .chargeFeesContent {
+          .chargeFeesType {
+            display: inline-block;
+            margin-bottom: 0;
+          }
+          .delChargeFee {
+            border: none;
+            color: red;
+            padding: 0;
+            font-size: 16px;
+            margin-left: 30px;
+          }
+
+          .el-card {
+            height: 560px;
+            margin-right: 20px;
+            display: inline-block;
+          }
+          .el-card.charge-fees {
+            height:auto;
+            min-height: 60px;
+            margin-right: 20px;
+            display: inline-block;
+            vertical-align: text-top;
+          }
+          .addChargeFees {
+            width: 200px;
+            text-align: center;
+            cursor: pointer;
+            .el-card__body {
+              padding: 0;
+              width: 100%;
+              height: 100%;
+              .el-button {
+                width: 100%;
+                height: 100%;
+                border: none;
+                i {
+                  font-size: 40px
+                }
+                span {
+                  font-size: 14px
+                }
+              }
+            }
+          }
+        }
+        .billSettle {
+          display: inline-block;
+          margin-right: 20px
+        }
+        .showSubsidy {
+          .showSubsidyWidth {
+            display: inline-block;
+            width: 127px;
+            margin-bottom: 0;
+            .el-form-item__error {
+              position: absolute
+            }
+          }
+        }
+        .serviceCharge {
+          margin-top: 20px
+        }
+        .chargeFeesContent .setGathering{
+          vertical-align: top;
+          line-height: 56px;
+        }
+        .accountInfo {
+          .activeBOH {
+            .el-form-item__error {
+              position: inherit
+            }
+          }
+          .accountMessage {
+            margin-left: 70px;
+            .third {
+              display: inline-block
+            }
+            .cycle {
+              width: 300px;
+              .el-select {
+                width: 90px
+              }
+            }
+            .settlement {
+              display: inline-block
+            }
+            .checkInterSettle {
+              color: #67C23A
+            }
+            .RSCollection {
+              display: inline-block;
+              margin-right: 0px;
+              width: 230px
+            }
+            .RSCollectionUpload {
+              width: 180px
+            }
+            .RSCollectionMain {
+              width: 250px
+            }
+            .payWays {
+              .el-form-item {
+                display: inline-block;
+                .keepBooksDate {
+                  width: 270px;
+                  margin-right: 38px
+                }
+              }
+            }
+            .guarantyCompany {
+              margin-bottom: 22px;
+              .money {
+                display: inline-block;
+                min-width: 70px
+              }
+              .moneyInp {
+                width: 100px;
+                margin-right: 20px
+              }
+              .log {
+                color: #67C23A
+              }
+              .el-form-item__error {
+                padding-top: 0
+              }
+              .el-form-item {
+                display: inline-block
+              }
+              .el-form-item__label {
+                width: 250px;
+                padding: 0 20px 0 0;
+                font-weight: bold;
+                font-size: 14px
+              }
+              .el-form-item__content {
+                display: inline-block
+              }
+            }
+            .guarantyCompanyButton {
+              text-align: right;
+              margin-top: 10px
+            }
+          }
+          .ensureMode {
+            .el-form-item__content {
+              position: relative;
+              .setEnsureMode {
+                min-width: 320px;
+                display: inline-block;
+                margin-right: 20px;
+                vertical-align: top;
+                .ensureSelWidth {
+                  width: 150px
+                }
+                .deleteMode {
+                  margin-left: 15px
+                }
+                .modeDetails {
+                  width: 100%;
+                  padding: 10px;
+                  border: 1px solid #E4E4E4;
+                  .guarantyForm {
+                    margin-bottom: 10px
+                  }
+                  .checkAddDetails {
+                    color: #67C23A
+                  }
+                  .refund {
+                    margin-left: 100px
+                  }
+                }
+              }
+              .addEnsureMode {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                border: 1px dashed #E4E4E4;
+                text-align: center;
+                color: #c0c4cc;
+                cursor: pointer;
+                vertical-align: top;
+                line-height: 56px;
+                div {
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  margin-top: -45px;
+                  margin-left: -42px;
+                  i {
+                    font-size: 40px;
+                    font-weight: bolder;
+                  }
+                  span {
+                    font-size: 14px
+                  }
+                }
+              }
+            }
+          }
+          .warnAmount {
+            .el-form-item {
+              display: inline-block
+            }
+            .warnAmountType {
+              width: 100px
+            }
+            .warnAmountInp {
+              width: 150px
+            }
+          }
+          .isProvide {
+            .el-form-item {
+              display: inline-block
+            }
+            .isProvideMode {
+              margin-left: 60px
+            }
+          }
+        }
+      }
+      /*核对/核算信息*/
+      .checkInfo {
+        .accountState {
+          .uploadFiles {
+            color: #67C23A
+          }
+          .cycle {
+            width: 200px;
+            .el-select {
+              width: 90px
+            }
+          }
+        ;
+          .billDisabled {
+            width: 200px;
+            display: inline-block;
+            margin-right: 30px
+          }
+        }
+        .offsetCode {
+          width: 215px;
+          display: inline-block
+        }
+        .accountSubject {
+          display: inline-block
+        }
+      }
+      /*联系人信息*/
+      .contactInfo {
+        .contactInfoDetails {
+          .el-form-item {
+            display: inline-block;
+            margin-right: 17px;
+            .contactInfoDetailsInp {
+              width: 220px
+            }
+          }
+        }
+      }
+    }
+  }
+}
