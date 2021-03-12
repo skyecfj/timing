@@ -1,0 +1,29 @@
+//主档管理--通知
+#messageMng{
+    .main-content{
+        table{
+            .el-button{
+                position: relative;
+                z-index: 50;
+            }
+            .delete-btn.el-button--text{
+                color: red;
+            }
+            .switchDiv{
+                display: inline-block;
+                .el-switch{
+                    z-index: 0;
+                }
+            } 
+        }
+    }   
+}
+//主档管理--积分主档
+#integralMng{
+    .main-content{
+        .tbl-top-right{
+            padding-bottom: 20px;
+            text-align: right;
+        }
+    }
+}

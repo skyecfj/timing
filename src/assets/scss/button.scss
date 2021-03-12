@@ -1,0 +1,276 @@
+@mixin button-color($color,$background-color,$background-hover-color, $button-type) {
+    color: $color;
+    background-color: $background-color;
+    @if $button-type == 'plain'{
+        border-color: $color;
+        &:not(:disabled) {
+            &:hover {
+                color: $color-white-text;
+                background:$background-hover-color;
+                border-color: $color;
+            }
+            &:focus {
+                color: $color;
+                background-color:$background-color;
+                border-color: $color;
+            }
+            &:active {
+                color: $color;
+                background-color:$background-color;
+                border-color: $color;
+            }
+        }
+        &:disabled {
+            color: $color-white-text;
+            background-color: $button-disabled-color;
+            border-color:$button-disabled-color;
+            &:hover,&:focus{
+                color: $color-white-text;
+                background-color: $button-disabled-color;
+                border-color:$button-disabled-color;
+            }
+        }
+    }
+
+    @else if $button-type == 'primary' {
+        border-color: $background-color;
+        &:not(:disabled) {
+            &:hover {
+                color: $color;
+                background-color:$background-hover-color;
+                border-color: $background-hover-color;
+            }
+            &:focus {
+                color: $color;
+                background-color:$background-color;
+                border-color: $background-color;
+            }
+            &:active {
+                color: $color;
+                background-color:$background-color;
+                border-color: $background-color;
+            }
+        }
+        &:disabled {
+            color: $color-white-text;
+            background-color: $button-disabled-color;
+            border-color:$button-disabled-color;
+            &:hover,&:focus{
+                color: $color-white-text;
+                background-color: $button-disabled-color;
+                border-color:$button-disabled-color;
+            }
+        }
+    }
+
+    @else if $button-type == 'flat' {
+        border-color: $color-white-text;
+        &:not(:disabled) {
+            &:hover {
+                color: $color-white-text;
+                background-color:$background-hover-color;
+                border-color: $color-white-text;
+            }
+            &:focus {
+                color: $color-white-text;
+                background-color:$background-hover-color;
+                border-color: $color-white-text;
+            }
+        }
+        &:disabled {
+            color: $color-white-text;
+            background-color: $button-disabled-color;
+            border-color:$button-disabled-color;
+            &:hover,&:focus{
+                color: $color-white-text;
+                background-color: $button-disabled-color;
+                border-color:$button-disabled-color;
+            }
+        }
+    }
+}
+
+@mixin button--plain--danger {
+    @include button-color($color-red-text, $color-white-background,$color-red-background, "plain");
+}
+
+@mixin button--plain {
+    @include button-color($color-theme-text, $color-white-background,$color-theme-background, "plain");
+}
+
+@mixin button--primary {
+    @include button-color($color-white-text, $themeColor, $color-theme-hover-background,"primary");
+}
+
+@mixin button--flat {
+    @include button-color($color-theme-text, $color-white-background,$color-theme-background,"flat");
+}
+
+.c-button-icon--left {
+  margin-right: 5px;
+}
+
+.c-button-icon--right {
+  margin-left: 5px;
+}
+
+.c-button--plain--danger{
+    @include button--plain--danger;
+}
+
+.c-button--plain {
+    @include button--plain;
+}
+
+.el-button--success.is-plain{
+    @extend .c-button--plain
+}
+
+.c-button--primary {
+    @include button--primary;
+}
+
+.el-button--success {
+    @extend .c-button--primary
+}
+
+.c-button--flat {
+    border-color:$color-white-text;
+    @include button--flat
+}
+
+.c-button {
+    display: inline-block;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+    -webkit-appearance: none;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 0;
+    margin: 0;
+    -webkit-transition: .1s;
+    transition: .1s;
+    font-size: $font-size-13;
+    border-radius: 4px;
+}
+
+
+@mixin button-icon-color($color, $background-color,$background-hover-color, $button-type) {
+    color: $color;
+    background-color: $background-color;
+    height:$button-icon-default-width;
+    width:$button-icon-default-width;
+    padding:$button-icon-default-padding;
+    line-height: $button-icon-reset;
+    @if $button-type == 'plain' {
+        border-color: $color;
+        &:not(:disabled) {
+            &:hover {
+                color: $color-white-text;
+                background-color:$background-hover-color;
+                border-color: $color;
+            }
+            &:focus {
+                color: $color-white-text;
+                background-color:$background-hover-color;
+                border-color: $color;
+            }
+        }
+        &:disabled {
+            color: $color-white-text;
+            background-color: $button-disabled-color;
+            border-color:$button-disabled-color;
+            &:hover,&:focus{
+                color: $color-white-text;
+                background-color: $button-disabled-color;
+                border-color:$button-disabled-color;
+            }
+        }
+    }
+
+    @else if $button-type == 'primary' {
+        border-color: $background-color;
+        &:not(:disabled) {
+            &:hover {
+                color: $color;
+                background-color:$background-hover-color;
+                border-color: $background-color;
+            }
+            &:focus {
+                color: $color;
+                background-color:$background-hover-color;
+                border-color: $background-color;
+            }
+        }
+        &:disabled {
+            color: $color-white-text;
+            background-color: $button-disabled-color;
+            border-color:$button-disabled-color;
+            &:hover,&:focus{
+                color: $color-white-text;
+                background-color: $button-disabled-color;
+                border-color:$button-disabled-color;
+            }
+        }
+    }
+}
+
+
+@mixin button-icon--primary--opacity {
+    @include button-icon-color($color-theme-text,$themeColor-opacity1,$color-white-background,'primary')
+}
+
+@mixin button-icon--danger--opacity {
+    @include button-icon-color($color-red-text,$dangerColor-opacity1,$color-white-background,'primary')
+}
+
+@mixin button-icon--primary {
+    @include button-icon-color($color-white-text,$color-theme-background,$color-theme-hover-background,'primary')
+}
+
+@mixin button-icon--plain {
+    @include button-icon-color($color-theme-text, $color-white-background,$color-theme-background, "plain");
+}
+
+.c-button--small {
+    height: $button-icon-small-width;
+    width: $button-icon-small-width;
+    padding: 0;
+    line-height: $button-icon-small-width;
+}
+
+.c-button-icon-circle {
+    border-radius: 50%;
+}
+
+.c-button-icon--primary--opacity{
+    @include button-icon--primary--opacity;
+}
+
+.c-button-icon--danger--opacity{
+    @include button-icon--danger--opacity;
+}
+
+.c-button-icon--primary {
+    @include button-icon--primary;
+}
+.c-button-icon--plain {
+    @include button-icon--plain;
+}
+
+//c-icon
+
+@mixin icon-color ($color,$font-size){
+    color:$color;
+    font-size:$font-size;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.c-icon {
+    @include icon-color($themeColor,$icon-default-size);
+}
+
+

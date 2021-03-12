@@ -1,0 +1,209 @@
+.el-icon-close-tip{
+  display: none !important;
+}
+.alibill-upload{
+  float: left;
+}
+.el-input--small .el-input__inner{
+  height: 32px !important;
+  line-height: 32px !important;
+}
+//手工核对样式
+#manualCheckmainPage{
+  .el-dialog.adjust-dialog{
+    min-width: 880px;
+    .cash-a-day-choose{
+      margin-bottom: 15px;
+      padding-left: 2px;
+      .el-select{
+        margin-left: 10px;
+      }
+    }
+    .adjust-form{
+      .row-button{
+        display: inline-block;
+        margin-top: 6px;
+        .el-button+.el-button{
+          margin-left: 0px;
+        }
+      }
+      .row-button.no-label{
+        margin-top: 28px;
+      }
+      .el-form-item {
+        margin: 0 10px 15px 0;
+        label.el-form-item__label {
+          line-height: 20px;
+        }
+      }
+    }
+    .casha-bizday-form{
+      .el-form-item__error{
+        left: 13%;
+      }
+    }
+  }
+  .el-dialog.view-file-dialog{
+    .el-dialog__body{
+      padding-top: 0;
+      .el-upload-list__item-status-label,.el-icon-close,.el-icon-close-tip{
+        display: none;
+      }
+    }
+  }
+  .check-data-content{
+    .check-sum{
+      margin-right: 10px;
+      font-size: 15px;
+    }
+    .tbl-content{
+      border: 1px solid #ebeef5;
+      border-bottom: 0;
+      border-right: 0;
+      .el-table{
+        tr.multi-row{
+          background-color: #f0f9eb;
+        }
+        tr{
+          .icon-content{
+            display: inline-block;
+            .check{
+              border: 1px solid #56CD74;
+              background-color: #56CD74;
+              color: #fff;
+              padding: 1px 4px;
+            }
+            .split{
+              border: 1px solid red;
+              color: red;
+              padding: 1px 2px;
+            }
+          }
+        }
+      } 
+      .el-table--border{
+        border: 0;
+        th{
+          border-right: 0;
+          .header-search{
+            padding: 0px 0px;
+            line-height: 0;
+            .header-label{
+              line-height: 20px;
+            } 
+            .el-input,.el-select{
+              padding: 0 0;
+            }
+          }
+          .header-date-search{
+            max-width: 140px;
+            .el-date-editor.el-input{
+              width: 100%;
+              .el-input__prefix{
+                left: 0;
+              }
+            }
+            .el-input--prefix .el-input__inner{
+              padding-left: 25px;
+            }
+            .el-input--suffix .el-input__inner {
+              padding-right: 25px;
+            }
+          }
+          .header-range-search{
+            padding: 0;
+            .el-input{
+              width: 45px;
+              .el-input__inner{
+                padding: 0 5px;
+              }
+            }
+            span.split{
+              position: relative;
+              top: -15px;
+              margin: 0 5px;
+            }
+          }
+        }
+        th.date-header{
+          div.cell{
+            min-width: 200px
+          }
+        }
+        th.date-header{
+          div.cell{
+            min-width: 200px
+          }
+        }
+      }
+      th.left-check-column{
+        .cell{
+          display: none;
+        }
+      }
+      th.right-check-column{
+        border-right: 1px solid #ebeef5;
+        .cell{
+          display: none;
+        }
+      }
+      .el-table__header {
+        .cell {
+          padding: 0 2px;
+        }
+      }
+    }
+  }
+}
+//BOH与第三方账单核对--差异定位,订单级差异核对公用
+#bohAndBillAdjust,#allCheckDetails{
+  .top-control{
+    margin-bottom: 15px;
+    font-size: 14px;
+    position: relative;
+    .btn-group{
+      margin-bottom: 0;
+      padding-right: 0;
+      position: absolute;
+      bottom: 3px;
+      right: 0;
+      .link-btn{
+        text-decoration: underline;
+      }
+    }
+    p{
+      padding: 3px 0;
+    }
+  }
+  .li-order-check-detail{
+    margin-left:10px;
+    text-decoration: underline;
+  }
+}
+//BOH与第三方账单核对--差异定位
+#bohAndBillAdjust{
+  .el-form--inline.adjust-detail-form{
+    .el-form-item{
+      margin-right: 0;
+    }
+    .el-date-editor.el-input{
+      width: 100%;
+    }
+  }
+  .adjust-detail-tbl{
+    th,td{
+      border-right: none;
+    }
+    th{
+      background-color: #f5f7fa;
+    }
+  }
+}
+//订单级差异核对
+#allCheckDetails{
+  .top-control{
+    .btn-group{
+      top: 5px;
+    }
+  }      
+}

@@ -1,0 +1,61 @@
+.home-task{
+  .viewHeader{
+    .el-row{
+      margin-bottom: 6px;
+      vertical-align: middle;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .el-col{
+        text-align: left;
+        font-size: 13px;
+        vertical-align: middle;
+      }
+    }
+  }
+  .viewContent{
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 24px;
+    .viewTable{
+      width: 100%;
+    }
+    .viewPage{
+      margin-top: 24px;
+      text-align: right;
+      .viewPageSize{
+        width: 85px;
+      }
+      .gross{
+        display: inline-block;
+        vertical-align:middle;
+        .el-input{
+          width: 30%;
+        }
+      }
+    }
+  }
+  .el-dialog__wrapper{
+    .el-dialog__body{
+      .el-row{
+        margin-bottom: 20px;
+        .demo-input-suffix{
+          span{
+            text-align: right;
+            width: 80px;
+            display: inline-block;
+          }
+          .el-input{
+            width: 49%;
+            .eyePoint{
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.el-select{
+  width:100%;
+}

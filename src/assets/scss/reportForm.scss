@@ -1,0 +1,25 @@
+.reportFrom{
+  min-width: 800px;
+  .viewHeader{
+    width: 100%;
+    background-color: #fff;
+    padding: 15px 20px;
+    .el-row{
+      margin-bottom: 6px;
+      vertical-align: middle;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .el-col{
+        text-align: left;
+        font-size: 13px;
+        vertical-align: middle;
+      }
+    }
+  }
+  .viewContent{
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 24px;
+  }
+}

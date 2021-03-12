@@ -1,0 +1,27 @@
+// table  cell tooltip提示
+
+.el-tooltip__popper.is-light.table-cell-toolTip{
+      box-shadow: 2px 2px 4px 0px $themeColor-opacity5;
+      border:1px solid  $themeColor-opacity6
+}
+.el-tooltip__popper.is-light {
+    &[x-placement^=top].table-cell-toolTip .popper__arrow{
+        border-top-color:$themeColor-opacity6
+    }
+
+    &[x-placement^=bottom].table-cell-toolTip .popper__arrow{
+        border-bottom-color:$themeColor-opacity6
+    }
+
+    &[x-placement^=left].table-cell-toolTip .popper__arrow{
+        border-left-color:$themeColor-opacity6
+    }
+
+    &[x-placement^=right].table-cell-toolTip .popper__arrow{
+        border-right-color:$themeColor-opacity6
+    }
+}
+
+.el-tooltip__popper.table-cell-toolTip {
+  padding: 6px 10px;
+}
